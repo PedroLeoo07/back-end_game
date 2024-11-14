@@ -1,0 +1,33 @@
+{
+  "name": "jogo",
+  "version": "1.0.0",
+  "description": "Jogo de back-end parecido com o among us, proposta pelos professores Marcello e Felipe",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "jogo": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroLeoo07/back-end_game.git"
+  },
+  "keywords": [
+    "dev",
+    "senai",
+    "marcello",
+    "felipe",
+    "jogo"
+  ],
+  "author": "Leonardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroLeoo07/back-end_game/issues"
+  },
+  "homepage": "https://github.com/PedroLeoo07/back-end_game#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
