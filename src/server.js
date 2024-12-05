@@ -1,17 +1,14 @@
 import express from "express";
 import { config } from "dotenv";
+import rotas from "./routes/indexRoutes.js";
 
 config();
-
-const serverPort = process.env.PORT || 3000;
-
+const portaServidor = process.env.PORT || 4000;
 const app = express();
+
 app.use(express.json());
+app.use(rotas);
 
-app.get("/", (req, res) => {
-  return res.status(200).json({ message: "Hello, World!" });
-});
-
-app.listen(serverPort, () => {
-  console.log(`⚡ Servidor rodando http://localhost:${serverPort}`);
+app.listen(portaServidor, () => {
+  console.log(`🎉 Servidor iniciado em http://localhost:${portaServidor} 🎉`);
 });
